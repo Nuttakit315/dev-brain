@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0",
+  "metadata": {
+    "engine": "Dev Brain Semantic Knowledge Graph",
+    "total_nodes": 0,
+    "total_edges": 0,
+    "supported_relations": [
+      "solves",
+      "mitigates",
+      "commonly_causes",
+      "symptom_of",
+      "uses",
+      "depends_on",
+      "alternative_to",
+      "implements",
+      "part_of",
+      "links_to"
+    ]
+  },
+  "nodes": [],
+  "edges": []
+}

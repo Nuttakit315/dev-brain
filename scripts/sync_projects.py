@@ -43,6 +43,7 @@ def extract_project_name(target: str) -> str:
 def extract_urls_from_markdown(content: str) -> list[dict]:
     """สกัด Git URLs และ Local Folder Paths จากไฟล์ Markdown (รองรับการตั้งชื่อ [Custom-Name](URL))"""
     targets = []
+    content = re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
     for line in content.splitlines():
         line = line.strip()
         if not line or line.startswith("#") or line.startswith("<!--"):
